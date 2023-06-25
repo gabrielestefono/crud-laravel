@@ -21,7 +21,8 @@ class BookController extends Controller
      */
     public function index()
     {
-        return view('index');
+        $books = $this->ObjBook->all();
+        return view('index', compact('books'));
     }
 
     /**

@@ -9,4 +9,8 @@ class ModelBook extends Model
 {
     use HasFactory;
     protected $table="book";
+
+    public function relUsers(){
+        return $this->hasOne('App\Models\User', foreignKey:'id', localKey: 'id_user');
+    }
 }
