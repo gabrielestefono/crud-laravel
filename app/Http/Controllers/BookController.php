@@ -3,9 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
+use App\Models\ModelBook;
 
 class BookController extends Controller
 {
+
+    private $ObjUser;
+    private $ObjBook;
+
+    public function __construct() {
+        $this->ObjUser = new User();
+        $this->ObjBook = new ModelBook();
+    }
     /**
      * Display a listing of the resource.
      */
