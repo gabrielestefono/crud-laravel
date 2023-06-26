@@ -46,7 +46,8 @@ class BookController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $book = $this->ObjBook->all()->find($id);
+        return view('show', compact('book'));
     }
 
     /**
