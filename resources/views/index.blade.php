@@ -3,7 +3,7 @@
     <h1 class="text-center">Crud</h1>
     <hr>
     <div class="text-center">
-        <a href="">
+        <a href="{{url('books/create')}}">
             <button class="btn btn-success mt-3 mb-4">Cadastrar</button>
         </a>
     </div>
