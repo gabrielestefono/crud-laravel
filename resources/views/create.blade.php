@@ -16,7 +16,7 @@
                 @endforeach
             </div>
         @endif
-        @if ($book)
+        @if (isset($book))
             <form name="formEdit" id="formEdit" method="post" action="{{url("books/$book->id")}}">
                 @method('put')
         @else

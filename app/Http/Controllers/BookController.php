@@ -88,6 +88,7 @@ class BookController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $del = $this->ObjBook->destroy($id);
+        return ($del)?"Sim":"Não";
     }
 }
